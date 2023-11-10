@@ -1,8 +1,10 @@
 import CartWidget from "../CarWidget/CartWidget"
+import ButtonComponent from "../ButtonComponent/ButtonComponent"
 import './styles.css'
 
 
 const NavBar = () =>{
+
     return(
     <nav>
         <div className="navbar-container">
@@ -12,9 +14,9 @@ const NavBar = () =>{
         
         <div>
             <div className="button-container">
-                <button>ENTRENAMIENTO</button>
-                <button>NUTRICIÓN</button>
-                <button>INFORMACIÓN</button>
+                <ButtonComponent label="ENTRENAMIENTO"/>
+                <ButtonComponent label="NUTRICIÓN"/>
+                <ButtonComponent label="INFORMACIÓN"/>
                 <CartWidget/>
             </div>
             
